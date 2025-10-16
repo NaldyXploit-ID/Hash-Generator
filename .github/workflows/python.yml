@@ -22,4 +22,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt || true; fi
       - name: Run tests
         run: |
-          if [ -d tests ]; then pip install pytest || true; pytest -q || true; else echo 'No tests'; fi
+          if [ -d tests ]; then pip install pytest || true; pytest -q || true; else echo "No tests"; fi
